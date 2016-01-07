@@ -1,10 +1,4 @@
-language: java
+language: java+jdk:
+ - oraclejdk8
 
-jdk:
-  - oraclejdk8
-
-services:
-  - mysql
-
-before_script:
-  - mysql -e 'create database test;'
+script: mvn test

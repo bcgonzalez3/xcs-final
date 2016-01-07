@@ -60,7 +60,7 @@ CREATE TABLE `Event` (
   `cancelled`   tinyint  	 NOT NULL,
   `description` varchar(1000),
   `place`       varchar(20),
-  `createdAt`  timestamp    Not NULL DEFAULT CURRENT_TIMESTAMP,
+  `createdAt`  timestamp    Not NULL,
 
   PRIMARY KEY (`id`),
   KEY `K_Event_Owner` (`owner`),

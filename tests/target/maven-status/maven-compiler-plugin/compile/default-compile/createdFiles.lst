@@ -9,6 +9,7 @@ es/uvigo/esei/dgss/letta/service/util/security/TestPrincipal.class
 es/uvigo/esei/dgss/letta/domain/matchers/IsEqualToUser.class
 es/uvigo/esei/dgss/letta/mail/Email.class
 es/uvigo/esei/dgss/letta/mail/MailBox.class
+es/uvigo/esei/dgss/letta/service/util/security/AdminRoleCaller.class
 es/uvigo/esei/dgss/letta/mail/RegexMatcher.class
 es/uvigo/esei/dgss/letta/domain/entities/UsersNotificationsDataset.class
 es/uvigo/esei/dgss/letta/service/util/security/RoleCaller$ThrowingSupplier.class

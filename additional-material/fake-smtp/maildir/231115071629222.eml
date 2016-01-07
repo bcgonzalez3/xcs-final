@@ -1,0 +1,11 @@
+        Mon, 23 Nov 2015 19:16:29 +0100 (CET)
+Date: Mon, 23 Nov 2015 19:16:29 +0100 (CET)
+From: no_reply@letta.com
+To: borja@email.com
+Message-ID: <789767376.0.1448302589102.JavaMail.alumnos@ubuntu>
+Subject: Confirm your registration
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<html><head><title>Confirm registration</title></head><body><br/><br/><a href="http://localhost:9080/letta/jsf/faces/confirm.xhtml?uuid=ad78781e-6040-4539-82f1-4bba0a7e4563">Click here to confirm</a></body></html>

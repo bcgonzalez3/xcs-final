@@ -1,0 +1,16 @@
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/entities/NotificationsDataset.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/matchers/IsEqualToEvent.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/entities/RegistrationsDataset.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/mail/MailBox.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/matchers/IsEqualToEntity.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/mail/Email.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/entities/EventsDataset.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/mail/RegexMatcher.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/matchers/IsEqualToUser.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/entities/UsersNotificationsDataset.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/service/util/security/RoleCaller.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/http/util/HasHttpStatus.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/matchers/IsEqualToRegistration.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/service/util/security/UserRoleCaller.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/domain/entities/UsersDataset.java
+/home/alumnos/letta/tests/src/main/java/es/uvigo/esei/dgss/letta/service/util/security/TestPrincipal.java

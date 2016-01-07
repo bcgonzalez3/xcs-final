@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+    <persistence-unit name="runtime">
+		<jta-data-source>java:jboss/datasources/letta</jta-data-source>
+		
+		<!-- Entity Classes -->
+		<!-- class>class.name</class-->
+		<class>es.uvigo.esei.dgss.letta.domain.entities.Registration</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.User</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.Event</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.Capital</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.CapitalDistances</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.Notification</class>
+	    <class>es.uvigo.esei.dgss.letta.domain.entities.UserNotifications</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

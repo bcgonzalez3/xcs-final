@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:p="http://primefaces.org/ui" 
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <f:metadata>
+		<f:event listener="#{loginController.redirectIfNotAnonymous}" type="preRenderView" />
+	</f:metadata>
+	
+    <h:head>
+    	<title>User registration</title>
+    </h:head>
+    <h:body>
+    	<ui:composition template="/template/templateLayout.xhtml">    		
+		    <ui:define name="content">
+		    	<div class="container ">
+			        <div class="row ">
+			          <div class="col-md-offset-3 col-md-6">
+			          	<br/><br/>
+			          	<h1>Sign up</h1>
+			          	<h3>It's free and always will be.</h3><br/>
+					    <ui:fragment rendered="#{registerController.error}">
+							<h:panelGroup id="store-error" class="col-md-12 alert alert-danger" role="alert">
+								Error: #{registerController.errorMessage}
+							</h:panelGroup>
+			            <br/>
+						</ui:fragment>
+		    			<h:form id="register-form" enctype="multipart/form-data">
+		    				<h:message for="login"/>
+					    	<h:inputText id="login" required="true" maxlength="100" class="form-control" value="#{registerController.login}" a:placeholder="Login*" requiredMessage="Login can't be empty"/><br/>
+					    	<h:message for="email"/>
+					    	<h:inputText id="email" required="true" renderedType="email" class="form-control" value="#{registerController.email}" a:placeholder="Email*" requiredMessage="Email can't be empty" validatorMessage="This email is not valid">
+					    		<f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+							</h:inputText><br/>  
+					    	<h:message for="password"/>
+					    	<h:inputSecret id="password" required="true" class="form-control" value="#{registerController.password}" a:placeholder="Password*" requiredMessage="Password can't be empty"/><br/>
+					        <h:inputSecret id="repassword" required="true" class="form-control" value="#{registerController.repassword}" a:placeholder="Repeat password*" requiredMessage="Password can't be empty"/><br/>
+					    	<p style="color:#555;">Select profile image</p>
+					    	<h:inputFile id="image" value="#{registerController.image}"></h:inputFile><br/>
+					    	<h:inputText id="completeName" required="false" maxlength="30" class="form-control" value="#{registerController.completeName}" a:placeholder="Complete name"/><br/>
+					    	<h:inputText id="fbUrl" required="false" maxlength="50" class="form-control" value="#{registerController.fbUrl}" a:placeholder="Facebook profile"/><br/>
+					    	<h:inputText id="twUrl" required="false" maxlength="50" class="form-control" value="#{registerController.twUrl}" a:placeholder="Twitter profile"/><br/>
+					    	<h:inputText id="personalUrl" required="false" maxlength="50" class="form-control" value="#{registerController.personalUrl}" a:placeholder="Your personal website"/><br/>
+					    	<h:inputTextarea rows="4" id="description" required="false" maxlength="1000" class="form-control" value="#{registerController.description}" a:placeholder="Your description"/><br/>
+							<h:selectOneMenu id="place-field" value="#{registerController.place}"
+									class="form-control">
+									<f:selectItem itemLabel="Select one place" itemValue="" />
+									<f:selectItems value="#{registerController.places}" />
+							</h:selectOneMenu>
+					    	<h:commandButton id="submit-button" class="btn btn-default" value="Register" action="#{registerController.doRegister()}"/>
+					    </h:form>
+				    	<small>* Obligatory fields</small>
+					    <br/>
+			          </div>
+			          <div class="col-md-3 "></div>
+			        </div>
+			      </div>
+    		</ui:define>
+    	</ui:composition>
+    </h:body>
+</html>

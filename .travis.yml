@@ -9,5 +9,6 @@ service:
   - mysql
 
 before_script:
+  - mysql -u root < additional-material/db/letta.full.sql
   - mysql -u root < additional-material/db/letta.test.sql
 

@@ -4,3 +4,10 @@ jdk:
  - oraclejdk8
 
 script: mvn test
+
+service:
+  - mysql
+
+before_script:
+  - mysql -e < additional-material/db/letta.test.sql
+

@@ -16,5 +16,5 @@ deploy:
   provider: openshift
   user: "bcgonzalez3@esei.uvigo.es"
   password: "opendeploy" 
-  domain: "xcsfinal"
+  domain: "xscfinal"
   app: deploy

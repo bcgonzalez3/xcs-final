@@ -32,7 +32,7 @@ public class AdminEventsController {
 
 	@Inject
 	private EventEJB eventEJB;
-	
+	error
 	private LazyDataModel<Event> events;
 	
 	@PostConstruct
